@@ -18,11 +18,14 @@ ARotatePlatform::ARotatePlatform()
 	if (MaterialAsset.Succeeded()) {
 		StaticMeshComp->SetMaterial(0, MaterialAsset.Object);
 	}
+
+
 } 
 
 // Called when the game starts or when spawned
 void ARotatePlatform::BeginPlay()
 {
+	
 	Super::BeginPlay();
 	
 }

@@ -11,10 +11,11 @@ ABaseActor::ABaseActor()
 
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
 	SetRootComponent(SceneRoot);
+	
 
 	StaticMeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMeshComp->SetupAttachment(SceneRoot);
-
+	StaticMeshComp->AddRelativeLocation(FVector(-200, -200, 0));
 
 }
 
